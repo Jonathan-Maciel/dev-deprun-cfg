@@ -1,0 +1,37 @@
+#
+# Configuration for staging environment
+# adding change  
+version: 1.0
+app:
+  # build id to deploy. if 'version' is commented out, the application is not deployed
+  maven:
+    groupId: net.wasdev.wlp.sample
+    artifactId: "ferret"
+    version: "1.2"
+    type: war
+  
+  # number of instances
+  instances:
+    # min number of instances. can be 0 for scale to 0. default to 1.
+    min: 1
+    
+    # max number of instances. defaults to 1 if min == 0, otherwise defaults to min
+    max: 1
+
+  # enable public endpoint
+  endpoints: public
+  
+  resources:
+    # max cpu. memory limit is based on cpu value: 1:3 memory ratio, e.g. 1 cpu == 3 gb
+    cpu: 1
+
+  # List of variables that can be referenced in the server.xml
+  variables:
+    - name: io_openliberty_sample_system_inMaintenance
+      value: "false"
+      
+  # observability:
+  #  cloudwatch:   
+  #    arn: arn:aws:logs:region:account-id:destination:destination_name
+  #    logGroup: myLogGroup
+  #    region: us-east-1
