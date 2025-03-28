@@ -9,7 +9,7 @@ app:
   maven:
     groupId: net.wasdev.wlp.sample
     artifactId: "ferret"
-    version: "1.2"
+    version: "62bd2fcf-a46a-4370-be8b-c5a9440facaf"
     type: war
   
   # number of instances
