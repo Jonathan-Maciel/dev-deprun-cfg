@@ -3,13 +3,13 @@
 # Configuration for staging environment 
 # force 11/12
 #  
-version: 62bd2fcf-a46a-4370-be8b-c5a9440facaf
+version: 1.0
 app:
   # build id to deploy. if 'version' is commented out, the application is not deployed
   maven:
     groupId: net.wasdev.wlp.sample
     artifactId: "ferret"
-    version: "1.2"
+    version: "62bd2fcf-a46a-4370-be8b-c5a9440facaf"
     type: war
   
   # number of instances
