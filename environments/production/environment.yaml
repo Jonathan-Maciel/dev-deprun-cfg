@@ -16,10 +16,10 @@ app:
     min: 1
     
     # max number of instances. defaults to 1 if min == 0, otherwise defaults to min
-    max: 1
+    max: 2
 
   # enable public endpoint
-  endpoints: public
+  # endpoints: public
   
   resources:
     # max cpu. memory limit is based on cpu value: 1:3 memory ratio, e.g. 1 cpu == 3 gb
